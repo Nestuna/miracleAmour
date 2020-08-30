@@ -1,0 +1,315 @@
+<div class="container">
+    <form class="row" id="interests">
+        <div class="form-group col-sm-6 col-md-2" id="col-cinema">
+            <h3 class="categorie" id="cinema">Cinéma</h3>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="cinema" value="1">Horreur</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="cinema" value="2">Aventure</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="cinema" value="3">XXX</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="cinema" value="4">Science-Fiction</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="cinema" value="5">Romance</label>
+            </div>
+        </div>
+        <div class="form-group col-md-2" id="col-litte">
+            <h3 class="categorie" id="litterature">Littérature</h3>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="litterature" value="1">Horreur</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="litterature" value="2">Aventure</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="litterature" value="3">XXX</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="litterature" value="4">Science-Fiction</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="litterature" value="5">Romance</label>
+            </div>
+        </div>
+        <div class="form-group col-md-2" id="col-musique">
+            <h3 class="categorie" id="musique">Musique</h3>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="musique"value="1">Rock</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="musique" value="2">Rap</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="musique" value="3">Folk</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="musique" value="4">Psychédélique</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="musique" value="5">Dubstep</label>
+            </div>
+        </div>
+        <div class="form-group col-md-2" id="col-sport">
+            <h3 class="categorie" id="sport">Sport</h3>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="sport" value="1">Foot</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="sport" value="2">Basket</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="sport" value="3">Rugby</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="sport" value="4">Tennis</label>
+            </div>
+            <div class="form-check">
+                <label class=form-check-label><input type="checkbox" name="sport" value="5">Baby-foot</label>
+            </div>
+        </div>
+        <div class="form-group col-md-2" id="col-info">
+            <h3 class="categorie" id="infos">Informations</h3>
+            <div class="form-check">
+                <label class=form-check-label>Sexe</label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" name="infos" value="1">Homme
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" name="infos" value="2">Femme
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" name="infos" value="3">Autre
+                    </label>
+                </div>
+            </div>
+            <div class="form-check">
+                <div style="display: inline-block;">
+                    <label class=form-check-label>Age</label>
+                    <input type="range" min="18" max="100" class="custom-range" id="customRange1"><label>18 - </label> <label class="valueSpan"> </label>
+                    <!--<span class="font-weight-bold text-primary ml-2 mt-1 valueSpan"></span>-->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2" id="col-info">
+            <button type="button" class="btn btn-info btn-lg btn-block" type="submit">Filtrer</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="profil1" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                    <button type="button" class="btn btn-info btn-lg">Voir profil</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="profil2" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil3" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil4" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil5" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil6" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil7" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil8" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil9" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        <div id="profil10" class="col-lg-6">
+            <div class="row ">
+                <div id="photo" class="col-md-4"> 
+                    <img class="img-fluid img-thumbnail" src="Images/alper_number_one.jpeg" alt="alper"> 
+                </div>
+                <div id="informations" class="col-md-4">
+                    <ul>
+                        <li id="prenom"><h2>Alper</h2></li>
+                        <li id="ville">Sevran</li>
+                        <li id="sexe">Indeterminé</li>
+                        <li id="orientation">Open</li>
+                        <li id ="profession">Fumiste</li>
+                        <li id="age">27 ans</li>
+                    </ul>                 
+                </div>
+                <div id="texte-description" class="col-md-4">
+                    <p>"Blabla blabla blabla Blabla blabla blabla askim Vinson"</p> 
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+
+</div>

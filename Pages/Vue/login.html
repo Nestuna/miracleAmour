@@ -1,0 +1,21 @@
+<h3>LOGIN</h3>
+<div class="container">
+    <form class="form" action="./Pages/Controller/check_login.php" method="POST">
+        <!--OUBLIER PAS LE JS POUR CHECK LES CHAMPS SVP -->
+        <div class="row">
+            <div class="form-group col-md-6" style="display:block";>
+                <label for="email">Email</label>
+                <input class="form-control" type="text" id="email" name = "email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="pwd">Mot de passe</label><br>
+                <input class="form-control" type="password" id="pwd" name ="pwd">
+           
+            </div>
+        </div>
+        
+        <div id="clear"></div>
+        <p id="bouton"><input class ="btn btn-info btn-lg " type="submit" value="Se connecter"></p>
+    </form>
+    
+</div>

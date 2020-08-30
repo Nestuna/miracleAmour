@@ -1,0 +1,79 @@
+<!--- FORMULAIRE INSCRIPTION ------------------------->
+<h3>INSCRIPTION</h3>
+<div class="container">
+    <form class="form" action="./Pages/Controller/inscription_add.php" method="POST">
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="prenom">Prénom</label>
+                <input class ="form-control" type="text" id="prenom">
+                <span class="erreur"></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="nom">Nom</label>
+                <input class="form-control" type="text" id="nom">
+                <span class="erreur"></span>
+                
+            </div>
+            <div class="form-group col-md-4">
+                <label for="date_naissance">Date de naissance</label>
+                <input class="form-control" type="date" id="date_naissance">
+                <span class="erreur"></span>
+                        
+            </div>
+            <div class="form-group col-md-4">
+                <label for="ville">Ville</label>
+                <input class="form-control" type="text" id="ville">
+                <span class="erreur"></span>
+                            
+            </div>
+            <div class="form-group col-md-4">
+                <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email">
+                    <span class="erreur"></span>
+                    <div class ="invalid-feedback">
+                        Mauvaise forme d'email !
+                    </div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="email-confirm">Confirmer Email</label>
+                <input class="form-control" type="email" id="email-confirm">
+                <span class="erreur"></span>
+
+        </div>
+            <div class="form-group col-md-4">
+                <label for="pwd">Mot de passe</label>
+                <input class="form-control" type="password" id="pwd">
+                <span class="erreur"></span>
+                        
+            </div>
+            <div class="form-group col-md-4">
+                <label for="pwd-confirm">Confirmation mot de passe</label>
+                <input class="form-control" type="password" id="pwd-confirm">
+                <span class="erreur"></span>
+                    
+            </div>
+            <div class="form-group col-md-4">
+                <p>
+                        <label class ="form-check-label" for="homme">
+                            <input class="form-check-inline" type="radio" name="sexe" id ="homme" value="homme" checked>
+                            Homme
+                        </label>
+                    
+                        <label class="form-check-label" for="femme">
+                            <input class="form-check-inline" type="radio" name="sexe" id ="femme" value="femme">
+                            Femme
+                        </label>
+                        <label class="form-check-label" for="autre">
+                            <input class="form-check-inline" type="radio" name="sexe" id ="autre" value="autre">
+                            Autre
+                        </label>  
+                </p>  
+            </div>
+        </div>
+        <div id="bouton">
+            <input class ="btn btn-info btn-lg " type="submit" value="S'inscrire">
+        </div>
+    </form>
+</div>
+    
+

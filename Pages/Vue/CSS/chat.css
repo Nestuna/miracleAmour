@@ -1,0 +1,92 @@
+
+#block-chat-usr-list {
+    margin-top:2%;
+    height:600px;
+    background-color: #e8eefa;
+    box-shadow:  -1px 0px 20px 1px rgba(0,0,0,0.3);
+}
+#usr-list-chat {
+    background-color: #e8eefa;
+    color: #444;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.block-usr {
+    border-bottom:1px solid #7b808b;
+    padding:2%;
+    margin:0 !important;
+}
+.block-usr:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+.usr-list-lastMessage {
+    font-size: 0.7rem;
+    height: 40px;
+    padding:1%;
+    overflow: hidden;
+
+}
+#chat {
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 0.5%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+#chat .accueil-chat {
+    color: #444;
+    font-size: 1.2em;
+    margin-top: 30%;
+}
+.message {
+
+    
+}
+.message p {
+    margin: auto 0;
+
+}
+
+.message-expediteur {
+    background-color: #1d3466;
+
+    padding: 10px;
+    display: inline-block;
+    text-align:right;
+
+}
+.message-expediteur p {
+    text-align:right;
+    
+}
+.message-destinataire {
+    background-color: #b3bed4;
+
+    color: #111;   
+    padding:10px;
+    display: inline-block;
+}
+
+.nom-message, .date-message {
+    color: rgb(0,0,0,0.5);
+    font-size: 0.7rem;
+    padding:0 1%;
+}
+
+#form-envoi {
+  border-top: 2px solid white;
+  background-color: #e8eefa;
+  margin-bottom: 2%;
+  
+}
+#form-message {
+    width: 100%;
+    padding: 0 !important;
+
+}
+#block-envoi {
+    box-shadow:  -1px 0px 20px 1px rgba(0,0,0,0.3);
+    background: #e8eefa;
+    border-top:1px solid #FFF
+}
