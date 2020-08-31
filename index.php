@@ -27,35 +27,26 @@
     <body>
         <!--- HEADER -------------------------------------------------------->
         <header>
-            <div class="banner">
-                <h1><a href="index.php">Miracle d'Amour</a></h1>
-            </div>
+            <!-- <div class="banner">
+                
+            </div> -->
               <nav class="navbar navbar-expand-sm bg-blue navbar-fixed-top">
-
+                <h1><a href="index.php">Miracle d'Amour</a></h1>
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=profil">Profils</a>
+                    <a class="nav-link" href="index.php?page=profil">Profil</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="index.php?page=recherche">Recherche</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=swipe">Swipe!</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="index.php?page=chat">Chat</a>
                   </li>
-                  <li class="nav-item">
                       <?php 
-                        if (empty($_SESSION["id_usr"])) {
-                          echo '<a class="nav-link" href="index.php?page=login">Login</a>';
-                        }
-                        else {
-                          echo '<a class="nav-link" href="./Pages/Controller/logout.php">Logout</a>';
+                        if (!empty($_SESSION["id_usr"])) {
+                          echo '<li class="nav-item"><a class="nav-link" href="./Pages/Controller/logout.php">Logout</a></li>';
                         }
                       ?>
-                    
-                  </li>
                 </ul>
               </nav>
         </header>
@@ -63,13 +54,14 @@
         <!--- CONTENU -------------------------------------------------------->
         <section  class="container" id="contenu">
 			<?php
-				if (isset($_GET['page'])) {
-					include("Pages/Vue/" . $_GET['page'] . ".html");
+				if (empty($_SESSION["id_usr"])) {
+          include("Pages/Vue/login.html");
+          include("Pages/Vue/inscription.html");
 				}
 				else {
-         		 	if (empty($_SESSION["id_usr"])) {
-        				header("Location: index.php?page=inscription");
-				  	}
+          if (isset($_GET['page'])) {
+            include("Pages/Vue/" . $_GET['page'] . ".html");
+          }
 					else {
 						header("Location: index.php?page=profil");
 					}  
