@@ -86,7 +86,17 @@ nav {
 
 #bouton{
     text-align:center;
+
 }
+.btn-info {
+    background-color:  #2d5377;
+    border-color: #182d41;
+}
+.btn-info:hover {
+    background-color:  #24425f;
+    border-color: #182d41;
+}
+
 .erreur {
     color:#cc2c2c;
     font-weight: bold;

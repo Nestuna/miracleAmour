@@ -74,7 +74,7 @@ if($photo == null){
                 <div id="image-profil" class="col-md-2">
                     <img class="img-fluid img-thumbnail" src="'.$photo.'" alt="'.ucfirst($prenom).'">  
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <ul>
                         <li id="prenom"><h2>Prenom: '.ucfirst($prenom).'</h2></li>
                         <li id="ville">Ville: '.ucfirst($ville).'</li>
@@ -84,12 +84,19 @@ if($photo == null){
                         <li id="age">'.ucfirst($age).' ans</li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <p>"'.$citation.'"</p>
                 </div>
-            </div>
-
-                    
+                
+                <div id="bouton" class="col-md-4">
+                    <a href="index.php?page=modif-profil">
+                        <button class ="btn btn-info btn-lg">
+                            Modifier son profil
+                        </button>
+                    </a>
+                        
+                </div>
+             </div>        
             <div class="row no-gutters">
                 <div class="col">
                     <h2>Description</h2>       
