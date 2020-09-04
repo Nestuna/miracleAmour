@@ -1,3 +1,3 @@
 <?php
-    echo 'Gros caca';
+    var_dump($_POST);
 ?>
