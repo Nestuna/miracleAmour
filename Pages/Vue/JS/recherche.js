@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     // AJAX
-    var controller = './Pages/Controller/test.php';
+    var controller = './Pages/Controller/recherche.php';
     $('button').mousedown(function(event) {
         $.post(controller,
           {

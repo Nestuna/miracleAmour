@@ -39,7 +39,7 @@ Utilisation des méthodes getId_receveur, getMessages, getLastMessage*/
 
                  
                 if(empty($last_message)){
-                    $last_message['message'] = 'SEND NUDE' ; 
+                    $last_message['message'] = 'Send a Message 😜' ; 
                 }
 
                 $html .= '<div class="col-12 block-usr" data-user='.$destinataire[0]['id_usr'].'>

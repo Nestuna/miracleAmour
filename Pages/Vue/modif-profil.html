@@ -1,88 +1,79 @@
 <h3>MODIFIER MON PROFIL</h3>
 <div class="container">
-    <form class="form" action="./Pages/Controller/inscription_add.php" method="POST">
+    <form class="form" action="./Pages/Controller/modif_profil.php" method="POST">
         <div class="row">
             <div class="form-group col-md-4">
                 <label for="orientation">Orientation Sexuelle</label>
-                <input class ="form-control" type="text" id="orientation">
+                <input class ="form-control" type="text" id="orientation" name='orientation'>
                 <span class="erreur"></span>
             </div>
             <div class="form-group col-md-8">
                 <label for="orientation">Votre description</label>
-                <textarea class ="form-control" type="text" id="description" rows=10>
+                <textarea class ="form-control" type="text" id="description" rows=10 name='description'>
                 </textarea>
                 <span class="erreur"></span>
             </div>
                 <div class="form-group col-sm-6 col-md-2" id="col-cinema">
                     <h3 class="categorie" id="cinema">Cinéma</h3>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="1" value="1">Horreur</label>
+                        <label class=form-check-label><input type="checkbox" name="cinema" value="1">Horreur</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="2" value="2">Aventure</label>
+                        <label class=form-check-label><input type="checkbox" name="cinema" value="2">Science-Fiction</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="3" value="3">XXX</label>
+                        <label class=form-check-label><input type="checkbox" name="cinema" value="3">Romantique</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="4" value="4">Science-Fiction</label>
-                    </div>
-                    <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="5" value="5">Romance</label>
+                        <label class=form-check-label><input type="checkbox" name="cinema" value="4">Comedie</label>
                     </div>
                 </div>
                 <div class="form-group col-md-2" id="col-litte">
                     <h3 class="categorie" id="litterature">Littérature</h3>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="1" value="1">Horreur</label>
+                        <label class=form-check-label><input type="checkbox" name="Litterature" value="1">Romantique</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="2" value="2">Aventure</label>
+                        <label class=form-check-label><input type="checkbox" name="Litterature" value="2">Policier</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="3" value="3">XXX</label>
+                        <label class=form-check-label><input type="checkbox" name="Litterature" value="3">Biographie</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="4" value="4">Science-Fiction</label>
-                    </div>
-                    <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="5" value="5">Romance</label>
+                        <label class=form-check-label><input type="checkbox" name="Litterature" value="4">Erotique</label>
                     </div>
                 </div>
                 <div class="form-group col-md-2" id="col-musique">
                     <h3 class="categorie" id="musique">Musique</h3>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="1"value="1">Rock</label>
+                        <label class=form-check-label><input type="checkbox" name="Musique"value="1">Rock</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="2" value="2">Rap</label>
+                        <label class=form-check-label><input type="checkbox" name="Musique" value="2">Jazz</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="3" value="3">Folk</label>
+                        <label class=form-check-label><input type="checkbox" name="Musique" value="3">KPOP</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="4" value="4">Psychédélique</label>
+                        <label class=form-check-label><input type="checkbox" name="Musique" value="4">Turc</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="5" value="5">Dubstep</label>
+                        <label class=form-check-label><input type="checkbox" name="Musique" value="5">Rap</label>
                     </div>
                 </div>
                 <div class="form-group col-md-2" id="col-sport">
                     <h3 class="categorie" id="sport">Sport</h3>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="1" value="1">Foot</label>
+                        <label class=form-check-label><input type="checkbox" name="Sport" value="1">Rugby</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="2" value="2">Basket</label>
+                        <label class=form-check-label><input type="checkbox" name="Sport" value="2">Running</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="3" value="3">Rugby</label>
+                        <label class=form-check-label><input type="checkbox" name="Sport" value="3">Foot</label>
                     </div>
                     <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="4" value="4">Tennis</label>
-                    </div>
-                    <div class="form-check">
-                        <label class=form-check-label><input type="checkbox" name="5" value="5">Baby-foot</label>
+                        <label class=form-check-label><input type="checkbox" name="Sport" value="4">Tennis de table</label>
                     </div>
                 </div>
             

@@ -478,6 +478,85 @@ class Model{
 				  }
 		}
 
+		public function insert_cine($id_usr , $id_pref){
+			try{
+				$req = 'INSERT INTO `identifiant_cinema` (`id_usr`, `id_cinema`) VALUES (:id_usr, :id_pref)' ; 
+				$requete = $this->bd->prepare($req);
+				$requete->bindValue( ":id_usr" , $id_usr ) ;
+				$requete->bindValue( ":id_pref" , $id_pref ) ;
+				$requete -> execute() ;
+			}
+			catch(PDOException $e) {
+				die('<p> La connexion a échoué. Erreur['.$e->getCode().'] : '. $e->getMessage().'</p>');
+			}
+		}
+
+		public function insert_litterature($id_usr , $id_pref){
+			try{
+				$req = 'INSERT INTO `identifiant_litterature` (`id_usr`, `id_litterature`) VALUES (:id_usr, :id_pref)' ; 
+				$requete = $this->bd->prepare($req);
+				$requete->bindValue( ":id_usr" , $id_usr ) ;
+				$requete->bindValue( ":id_pref" , $id_pref ) ;
+				$requete -> execute() ;
+			}
+			catch(PDOException $e) {
+				die('<p> La connexion a échoué. Erreur['.$e->getCode().'] : '. $e->getMessage().'</p>');
+			}
+		}
+
+		public function insert_sport($id_usr , $id_pref){
+			try{
+				$req = 'INSERT INTO `identifiant_sport` (`id_usr`, `id_sport`) VALUES (:id_usr, :id_pref)' ; 
+				$requete = $this->bd->prepare($req);
+				$requete->bindValue( ":id_usr" , $id_usr ) ;
+				$requete->bindValue( ":id_pref" , $id_pref ) ;
+				$requete -> execute() ;
+			}
+			catch(PDOException $e) {
+				die('<p> La connexion a échoué. Erreur['.$e->getCode().'] : '. $e->getMessage().'</p>');
+			}
+		}
+
+		public function insert_musique($id_usr , $id_pref){
+			try{
+				$req = 'INSERT INTO `identifiant_musique` (`id_usr`, `id_musique`) VALUES (:id_usr, :id_pref)' ; 
+				$requete = $this->bd->prepare($req);
+				$requete->bindValue( ":id_usr" , $id_usr ) ;
+				$requete->bindValue( ":id_pref" , $id_pref ) ;
+				$requete -> execute() ;
+			}
+			catch(PDOException $e) {
+				die('<p> La connexion a échoué. Erreur['.$e->getCode().'] : '. $e->getMessage().'</p>');
+			}
+		}
+
+
+		public function update_profile($id_usr , $description){
+			try{
+				$req = 'UPDATE `profile_indiv` SET `description` = :description1 WHERE `profile_indiv`.`id_usr` = :id_usr' ; 
+				$requete = $this->bd->prepare($req);
+				$requete->bindValue( ":description1" , $description ) ;
+				$requete->bindValue( ":id_usr" , $id_usr ) ;
+				$requete -> execute() ;
+			}
+			catch(PDOException $e) {
+				die('<p> La connexion a échoué. Erreur['.$e->getCode().'] : '. $e->getMessage().'</p>');
+			}
+		}
+
+		public function update_profile1($id_usr , $orientation){
+			try{
+				$req = 'UPDATE `profile_indiv` SET `orientation_sexe` = :orientation WHERE `profile_indiv`.`id_usr` = :id_usr' ; 
+				$requete = $this->bd->prepare($req);
+				$requete->bindValue( ":orientation" , $orientation ) ;
+				$requete->bindValue( ":id_usr" , $id_usr ) ;
+				$requete -> execute() ;
+			}
+			catch(PDOException $e) {
+				die('<p> La connexion a échoué. Erreur['.$e->getCode().'] : '. $e->getMessage().'</p>');
+			}
+		}
+
 
 }
 

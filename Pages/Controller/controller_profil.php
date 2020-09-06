@@ -19,7 +19,7 @@ if(isset($_SESSION['id_usr'])) {
 }   
 
 if($photo == null){
-    $photo = "../../Images/alper_number_one.jpeg" ; 
+    $photo = "./Images/alper_number_one.jpeg" ; 
 }
 
 
@@ -41,7 +41,7 @@ if($photo == null){
     $orientation =  $tab_profil[0]["orientation_sexe"] ; 
     $profession = "Alper's fan";
     $description =  $tab_profil[0]["description"] ;
-    $citation = "SEND NUDE NOW!"; 
+    $citation = ""; 
 
     //variables pour les préférences:
     $cinema[0] = $m->get_prefCinema($tab_pref[0]['id_cinema']);
@@ -67,8 +67,7 @@ if($photo == null){
         }     
     }
 
-    /*var_dump($cinema);
-    var_dump($litterature);*/
+    
         
     $html ='<div class="row">
                 <div id="image-profil" class="col-md-2">
@@ -85,7 +84,7 @@ if($photo == null){
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p>"'.$citation.'"</p>
+                    <p>'.$citation.'</p>
                 </div>
                 
                 <div id="bouton" class="col-md-4">
