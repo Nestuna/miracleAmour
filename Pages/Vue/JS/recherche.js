@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     // AJAX
-    var controller = './Pages/Vue/JS/test_chat.php';
+    var controller = './Pages/Controller/test.php';
     $('button').mousedown(function(event) {
         $.post(controller,
           {
@@ -18,7 +18,7 @@ $(document).ready(function() {
             litte : recupCheckbox('litte'),
             musique: recupCheckbox('musique'),
             sport: recupCheckbox('sport'),
-            sexe :$('input[name=infos]').val(),
+            sexe :$('input[name=infos]:checked').val(),
             age: $('.valueSpan').text()
           },
           function(reponse) {
