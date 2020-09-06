@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     function recupCheckbox(name) {
       let tab = [];
-      for (let i=1; i < 5; i++) {
+      for (let i=1; i <= 5; i++) {
         let input = $('#col-' + name).find( $('input[name=' + i.toString() + ']'));
         console.log(input);
         if ( input.is(':checked') ) {

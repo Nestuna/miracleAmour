@@ -1,48 +1,95 @@
-<form action="#" method="POST">
-    <!-- INFOS DE BASES-->
-    <label>
-        <p>Pseudo</p>
-        <input type="text" name="prenom">
-    </label>
-    <label>
-        <p>Prénom</p>
-        <input type="text" name="prenom">
-    </label>
-    <label>
-        <p>Nom</p>
-        <input type="text" name="nom">
-    </label>
-    <label>
-        <p>Date de naissance</p>
-        <input type="text" name="date_naissance">
-    </label>
-    <label>
-      <p>Adresse</p>
-      <input type="text" name="adresse">
-    </label>
-    <label>
-        <p>Email</p>
-        <input type="text" name="email">
-    </label>
-    <label>
-        <p>Confirmer Email</p>
-        <input type="text" name="email-confirm">
-    </label>
-    <label>
-        <p>Mot de passe</p>
-        <input type="password" name="pwd">
-    </label>
-    <label>
-        <p>Confirmation mot de passe</p>
-        <input type="password" name="pwd-confirm">
-    </label>
-    <p>
-      <input type="radio" name="sexe" value="homme" checked><label>Homme</label>
-      <input type="radio" name="sexe" value="femme"><label>Femme</label>
-      <input type="radio" name="sexe" value="autre"><label>Autre</label>
-    </p>
-
-    <!--INFOS SUPLEMENTAIRE -->
-
-    <p id="bouton"><input type="submit" value="Envoyer"></p>
-</form>
+<h3>MODIFIER MON PROFIL</h3>
+<div class="container">
+    <form class="form" action="./Pages/Controller/inscription_add.php" method="POST">
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="orientation">Orientation Sexuelle</label>
+                <input class ="form-control" type="text" id="orientation">
+                <span class="erreur"></span>
+            </div>
+            <div class="form-group col-md-8">
+                <label for="orientation">Votre description</label>
+                <textarea class ="form-control" type="text" id="description" rows=10>
+                </textarea>
+                <span class="erreur"></span>
+            </div>
+                <div class="form-group col-sm-6 col-md-2" id="col-cinema">
+                    <h3 class="categorie" id="cinema">Cinéma</h3>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="1" value="1">Horreur</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="2" value="2">Aventure</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="3" value="3">XXX</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="4" value="4">Science-Fiction</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="5" value="5">Romance</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-2" id="col-litte">
+                    <h3 class="categorie" id="litterature">Littérature</h3>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="1" value="1">Horreur</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="2" value="2">Aventure</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="3" value="3">XXX</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="4" value="4">Science-Fiction</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="5" value="5">Romance</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-2" id="col-musique">
+                    <h3 class="categorie" id="musique">Musique</h3>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="1"value="1">Rock</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="2" value="2">Rap</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="3" value="3">Folk</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="4" value="4">Psychédélique</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="5" value="5">Dubstep</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-2" id="col-sport">
+                    <h3 class="categorie" id="sport">Sport</h3>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="1" value="1">Foot</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="2" value="2">Basket</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="3" value="3">Rugby</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="4" value="4">Tennis</label>
+                    </div>
+                    <div class="form-check">
+                        <label class=form-check-label><input type="checkbox" name="5" value="5">Baby-foot</label>
+                    </div>
+                </div>
+            
+                <div id="bouton" class='col-md-4' style ='margin-top: 9%'>
+                    <input class ="btn btn-info btn-lg " type="submit" value="Modifier">
+                </div>
+            
+           
+    </form>
+</div>
